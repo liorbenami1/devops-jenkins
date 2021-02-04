@@ -7,12 +7,12 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git 'https://github.com/levep/maven-quickstart.git'
+        git 'https://github.com/liorbenami1/maven-quickstart.git'
       }
     }
     stage('Build') {
       steps {
-        sh 'mvn clean compile'
+        sh 'mvn -e clean compile'
       }
     }
     stage('Test') {
