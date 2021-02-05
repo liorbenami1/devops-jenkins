@@ -10,5 +10,10 @@ pipeline {
                 url: "https://github.com/lev-tmp/jenkins2-course-spring-petclinic.git"
             )}
         }
+        stage ('say hello') {
+        steps {
+            hello "Naya College"
+            }
+        }
     }
 }
